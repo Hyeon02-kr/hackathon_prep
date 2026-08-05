@@ -14,6 +14,19 @@ function isValidMemberCount(value) {
   return Number.isInteger(value) && value >= 1;
 }
 
+// 오늘 날짜를 date input과 같은 YYYY-MM-DD 형식으로 반환한다
+function getTodayString() {
+  const now = new Date();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return now.getFullYear() + '-' + month + '-' + day;
+}
+
+// 날짜가 오늘보다 미래가 아닌지 검사한다
+function isValidDate(value) {
+  return value <= getTodayString();
+}
+
 // 폼 아래 메시지 영역에 성공/에러 메시지를 표시한다
 function showFormMessage(text, type) {
   const messageEl = document.getElementById('form-message');
@@ -27,6 +40,11 @@ function handleSubmit(event) {
 
   const form = event.target;
   const data = readFormValues(form);
+
+  if (!isValidDate(data.date)) {
+    showFormMessage('날짜는 오늘보다 미래일 수 없습니다.', 'error');
+    return;
+  }
 
   if (!isValidMemberCount(data.memberCount)) {
     showFormMessage('참여 인원은 1 이상의 정수로 입력해주세요.', 'error');
