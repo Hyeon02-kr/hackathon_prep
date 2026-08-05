@@ -33,4 +33,31 @@ body {
   color: red;
 }
 
-/* 반응형 미디어쿼리는 선택 기능 — 핵심 3기능 완료 후 별도 태스크로 추가 (섹션10 다음 단계 참고) */
+/* ===== 반응형: 좁은 화면(모바일) 대응 ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  /* 입력창이 화면 폭을 채우게 한다 (기본 크기로는 화면 절반도 쓰지 못함) */
+  #activity-form input,
+  #activity-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  /* 손가락으로 정확히 누를 수 있는 크기를 준다 (권장 최소 44px) */
+  #activity-form button,
+  .delete-btn {
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  /* 등록 버튼은 폭을 채워 누르기 쉽게 한다 */
+  #activity-form button {
+    width: 100%;
+  }
+}
