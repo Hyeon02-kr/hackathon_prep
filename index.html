@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동아리 활동 기록 관리</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>동아리 활동 기록 관리</h1>
+
+  <form id="activity-form">
+    <div class="field">
+      <label for="title">활동명*</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+    <div class="field">
+      <label for="date">날짜*</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="field">
+      <label for="place">장소</label>
+      <input type="text" id="place" name="place">
+    </div>
+    <div class="field">
+      <label for="memberCount">참여 인원*</label>
+      <input type="number" id="memberCount" name="memberCount" min="1" step="1" required>
+    </div>
+    <div class="field">
+      <label for="memo">메모</label>
+      <textarea id="memo" name="memo"></textarea>
+    </div>
+    <button type="submit">등록</button>
+  </form>
+
+  <div id="activity-list"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/register.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>

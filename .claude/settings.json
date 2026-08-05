@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./CLAUDE.md)",
+      "Edit(./CLAUDE.md)",
+      "Read(./README.md)",
+      "Edit(./README.md)",
+      "Read(.env)",
+      "Edit(.env)"
+    ]
+  }
+}

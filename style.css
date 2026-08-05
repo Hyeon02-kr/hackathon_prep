@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#activity-form .field {
+  margin-bottom: 8px;
+}
+
+#activity-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.activity-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.empty-message {
+  color: #777;
+}
+
+/* 반응형 미디어쿼리는 선택 기능 — 핵심 3기능 완료 후 별도 태스크로 추가 (섹션10 다음 단계 참고) */
