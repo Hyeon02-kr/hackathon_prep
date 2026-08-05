@@ -51,8 +51,8 @@ localStorage 키: "activities" (JSON 배열)
 
 # 현재 진행 상황
 - [x] 프로젝트 뼈대 (index.html/style.css/CLAUDE.md)
-- [ ] 활동 등록 (register.js)
-- [ ] 활동 목록 조회 (list.js)
-- [ ] 활동 삭제 (list.js)
-- [ ] 입력값 검증 (register.js)
-- [ ] 선택 기능: <직접 기입>
+- [x] 활동 등록 (register.js)
+- [x] 활동 목록 조회 (list.js)
+- [x] 활동 삭제 (list.js)
+- [x] 입력값 검증 (register.js)
+- [ ] 선택 기능: <작업중>
