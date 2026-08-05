@@ -10,7 +10,7 @@ function formatActivityCard(activity) {
   return '' +
     '<div class="activity-card" data-id="' + activity.id + '">' +
       '<h3>' + escapeHtml(activity.title) + '</h3>' +
-      '<p>날짜: ' + activity.date + ' | 장소: ' + escapeHtml(activity.place) + '</p>' +
+      '<p>날짜: ' + escapeHtml(activity.date) + ' | 장소: ' + escapeHtml(activity.place) + '</p>' +
       '<p>참여 인원: ' + activity.memberCount + '명</p>' +
       '<p>메모: ' + escapeHtml(activity.memo) + '</p>' +
       '<button class="delete-btn" data-id="' + activity.id + '">삭제</button>' +
