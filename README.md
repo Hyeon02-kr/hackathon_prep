@@ -11,8 +11,8 @@
 - 활동 삭제 (확인 절차 포함)
 
 ## 스크린샷
-![기본화면]({EF165C34-9C03-4F4B-9385-23F7EC5BE9A9}.png)
-![등록테스트]({2128FDA1-9E6B-436B-A741-2F7064CAB8E1}.png)
+![기본화면](screenshot/main.png)
+![등록테스트](screenshot/register.png)
 
 ## 파일 구조
 - `index.html` / `style.css` — 화면
